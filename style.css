@@ -1,33 +1,132 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
-* {
-  margin: 0;
+
+*{
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  
 }
 
-html,
-body {
-  background: linear-gradient(154.76deg, #628e75 3%, #1a4855 84.12%);
+html, body{
   width: 100%;
+  background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+  box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
 }
 
-.waepper{
-  height: 100vh;  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.warpper{border: 1px solid red;
+  height: 100vh;
+  padding: 41px 165px 140px;
+  
 }
 
-.warpperLogo {
+.warppertTop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 75px;
+}
+
+.warpperSocial > a > img     {
+  width: 24px;
+  padding-top: 13px;  
+  margin-left: 31px;
+  cursor: pointer;
+}
+
+.warpperBotton {
+  width: 445px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    
+}
+
+.warpperText{
+  
+}
+
+.right img{ border: 1px solid red;
+    width: 800px';
+   margin-left: 165px ;
+ }
+
+.warpperText > h2 {
+  padding-bottom: 14px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;  
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  color: #F9F9F9;
+
+}
+
+.warpperText > h1 {
+  padding-bottom: 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 68px;
+  line-height: 109%;
+  
+  color: #f9f9f9;
+}
+
+.warpperText > h4 {
+  padding-bottom: 46px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+
+  color: #F9F9F9;
+}
+
+.warpperButton{
+  display: flex;
+  justify-content: space-between;
+}
+
+.now {
+  width: 225px;
+  height: 45px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  text-transform: uppercase;
+  border: 0;
+
+  color: #f9f9f9;
+  background: #658e76;
+}
+
+.trailer {
+  width: 225px;
+  height: 45px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  text-transform: uppercase;
+  border: 0;
+
+  color: #f9f9f9;
+  background: #658e76;
 }
 
 @media (max-width: 420px) {
+
   .wrapper {
-    padding: 14px 25px 70px;
+    height: 736px;
+    
   }
 
  
@@ -39,7 +138,7 @@ body {
   .logoSocial > a {
     width: 20px;
     margin-left: 29px;
-    padding-top: 15px;
+    margin-top: 18px;
     cursor: pointer;
   }
 
