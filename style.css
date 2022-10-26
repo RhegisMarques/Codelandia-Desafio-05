@@ -141,16 +141,21 @@ span {
 
 @media (max-width: 420px) {
   .warpper {
-    width: 420px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 25px;
   }
+  .warppertTop{border:  1px solid red;
+    padding: 0;
+  }
 
-  .warpperSocial {
+
+  .warpperSocial {border:  1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 30px;
   }
 
   .warpperSocial > a {
@@ -168,6 +173,7 @@ span {
   .right > img {
     width: 300px;
     order: 1;
+    border:  1px solid red;
   }
 
   .warpperText > h2 {
@@ -176,8 +182,6 @@ span {
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
-    /* identical to box height */
-
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -185,22 +189,26 @@ span {
   }
 
   .warpperText > h1 {
-    font-family: "Poppins";
+    width: 327px;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     font-size: 56px;
     line-height: 109%;
-    /* or 61px */
+    
+    color: #F9F9F9;
 
-    color: #f9f9f9;
   }
 
   .warpperText > h4 {
-    font-family: "Poppins";
+    width: 362px;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 180%;
+
+    color: #F9F9F9;
   }
 
   .warpperButton {
