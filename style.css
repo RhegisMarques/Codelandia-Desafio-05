@@ -1,27 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
 
-html, body{
+html,
+body {
   width: 100%;
- height: 100vh;
- background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+  height: 100vh;
+  background: linear-gradient(130.02deg, #628e75 0.66%, #1a4855 83.32%);
   box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
-  
 }
 
-.warpper{
+.warpper {
   width: 1110px;
   margin: 0 auto;
-  padding-top:41px ;
-  
-  
+  padding-top: 41px;
 }
 
 .warppertTop {
@@ -33,48 +29,37 @@ html, body{
 
 .warpperSocial {
   display: flex;
-  gap:32px ;  
-  
+  gap: 32px;
 }
 
-.warpperSocial > a{
+.warpperSocial > a {
   cursor: pointer;
 }
 
-.main{
-  
+.main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- 
-
 }
 .left {
   display: flex;
   flex-direction: column;
   width: 445px;
-  
-  
-    
 }
 
-.right > img{
-  
-  border: 1px solid red; 
-  
+.right > img {
 }
 
 .warpperText > h2 {
   padding-bottom: 14px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 30px;  
+  line-height: 30px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;  
-  color: #F9F9F9;
-
+  text-transform: uppercase;
+  color: #f9f9f9;
 }
 
 .warpperText > h1 {
@@ -83,55 +68,67 @@ html, body{
   font-style: normal;
   font-weight: 900;
   font-size: 68px;
-  line-height: 109%;  
+  line-height: 109%;
   color: #f9f9f9;
 }
 
 .warpperText > h4 {
   padding-bottom: 46px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 180%;
 
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
-.warpperButton{
+.warpperButton {
+  position: relative;
   display: flex;
   align-items: center;
   transform: skewX(-20deg);
   gap: 15px;
 }
 
-.now{
+.now {
   width: 225px;
   height: 45px;
   border: 0;
+
   background: #658e76;
-
 }
-.now img{
- margin-right: 8px;
+.now img {
+  margin-right: 8px;
+  width: 12px;
 }
 
-
-.now > span{   
+.now > a {
+  text-decoration: none;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 180%;
   text-transform: uppercase;
-  transform: skewX(20deg);
+
   color: #f9f9f9;
- 
 }
 
+span {
+  transform: skewX(20deg);
+}
 .trailer {
   width: 225px;
   height: 45px;
+  border: 0;
+  border: 2px solid #658e76;
+  background: #658e76;
+  background: transparent;
+}
+
+.trailer > a {
+  text-decoration: none;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -140,11 +137,87 @@ html, body{
   text-transform: uppercase;
   border: 0;
   color: #f9f9f9;
-  border: 2px solid #658E76;
-  background: transparent;
-  
 }
 
 @media (max-width: 420px) {
+  .warpper {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
 
+  .warpperSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .warpperSocial > a {
+  }
+
+  .main {
+    flex-direction: column;
+    
+  }
+
+  .left {
+    order: 2;
+  }
+
+  .right > img {
+    width: 300px;
+    order: 1;
+  }
+
+  .warpperText > h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #f9f9f9;
+  }
+
+  .warpperText > h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 109%;
+    /* or 61px */
+
+    color: #f9f9f9;
+  }
+
+  .warpperText > h4 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+  }
+
+  .warpperButton {
+  }
+
+  .now {
+  }
+  .now img {
+  }
+
+  .now > a {
+  }
+
+  .trailer {
+
+    display: none;
+  }
+
+  
 }
