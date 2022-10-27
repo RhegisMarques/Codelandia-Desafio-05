@@ -9,8 +9,8 @@
 html,
 body {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(130.02deg, #628e75 0.66%, #1a4855 83.32%);
+  min-height: 100vh;
+  background: linear-gradient(154.76deg, #628E75 3%, #1A4855 84.12%);
   box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
 }
 
@@ -18,6 +18,7 @@ body {
   width: 1110px;
   margin: 0 auto;
   padding-top: 41px;
+  min-height: 100vh;
 }
 
 .warppertTop {
@@ -41,13 +42,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .left {
   display: flex;
   flex-direction: column;
   width: 445px;
-}
-
-.right > img {
 }
 
 .warpperText > h2 {
@@ -84,11 +83,13 @@ body {
 }
 
 .warpperButton {
-  position: relative;
   display: flex;
-  align-items: center;
-  transform: skewX(-20deg);
   gap: 15px;
+  
+}
+
+button{
+  transform: skewX(-20deg);
 }
 
 .now {
@@ -98,12 +99,20 @@ body {
 
   background: #658e76;
 }
+
+.now:hover {
+  background-color: #1A4855;
+  color: black;
+}
+
 .now img {
+  
   margin-right: 8px;
   width: 12px;
 }
 
 .now > a {
+  
   text-decoration: none;
   font-family: "Poppins";
   font-style: normal;
@@ -111,17 +120,15 @@ body {
   font-size: 16px;
   line-height: 180%;
   text-transform: uppercase;
+  transform: sk(20deg);
 
   color: #f9f9f9;
 }
 
-span {
-  transform: skewX(20deg);
-}
+
 .trailer {
   width: 225px;
-  height: 45px;
-  border: 0;
+  height: 45px;  
   border: 2px solid #658e76;
   background: #658e76;
   background: transparent;
@@ -139,41 +146,50 @@ span {
   color: #f9f9f9;
 }
 
+
+
+
 @media (max-width: 420px) {
-  .warpper {
+  .warpper{
+    
     width: 100%;
-    display: flex;
-    flex-direction: column;
     padding: 25px;
   }
-  .warppertTop{border:  1px solid red;
+
+  .warppertTop {
     padding: 0;
+    width: 100%;
   }
 
-
-  .warpperSocial {border:  1px solid red;
+  .warpperSocial {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px;
   }
 
-  .warpperSocial > a {
-  }
-
   .main {
+    width: 100%;
     flex-direction: column;
+    padding: 0;
     
   }
 
   .left {
+    width: 100%;
     order: 2;
   }
 
   .right > img {
-    width: 300px;
+    width: 100%;
     order: 1;
-    border:  1px solid red;
+  }
+
+  .warpperText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .warpperText > h2 {
@@ -189,43 +205,26 @@ span {
   }
 
   .warpperText > h1 {
-    width: 327px;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 900;
     font-size: 56px;
     line-height: 109%;
-    
-    color: #F9F9F9;
 
+    color: #f9f9f9;
   }
 
   .warpperText > h4 {
-    width: 362px;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 180%;
 
-    color: #F9F9F9;
-  }
-
-  .warpperButton {
-  }
-
-  .now {
-  }
-  .now img {
-  }
-
-  .now > a {
+    color: #f9f9f9;
   }
 
   .trailer {
-
     display: none;
   }
-
-  
 }
