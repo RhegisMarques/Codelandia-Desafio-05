@@ -102,7 +102,6 @@ html {
   }
 
   .now {
-    position: relative;
     height: 52px;
     padding: 14px 32px;
     border: none;
@@ -110,9 +109,12 @@ html {
     cursor: pointer;
     background: #f1a5b1;
     transition: all 0.5s;
-    background-image: url(/img/Play.svg);
-    background-repeat: no-repeat;
-    background-position: 50px;
+    > .btn {
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
   }
 
   .now:hover {
@@ -144,10 +146,36 @@ html {
   color: #f9f9f9;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   .header {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 765px;
-    padding: 24px 24px 0;
+    padding: 32px;
   }
+
+  .logo {
+    height: 48px;
+  }
+
+  .social {
+    display: flex;
+    gap: 24px;
+  }
+
+  .main {
+    max-width: 765px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 160px;
+  }
+
+  .left img {
+    width: 370px;
+  }
+}
+
+@media (min-width: 1024px) {
 }
