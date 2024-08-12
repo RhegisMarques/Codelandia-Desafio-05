@@ -8,7 +8,7 @@
 
 body,
 html {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: url(/img/wallpaper.png);
   background-position: top;
@@ -60,7 +60,7 @@ html {
   flex-direction: column;
   margin-bottom: 40px;
 
-  > h2 {
+  >h2 {
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: 700;
@@ -69,7 +69,7 @@ html {
     color: #f9f9f9;
   }
 
-  > h1 {
+  >h1 {
     margin-bottom: 32px;
     font-family: Andada Pro;
     font-size: 40px;
@@ -78,7 +78,7 @@ html {
     color: #f9f9f9;
   }
 
-  > p {
+  >p {
     font-family: Archivo;
     font-size: 16px;
     font-weight: 500;
@@ -109,7 +109,8 @@ html {
     cursor: pointer;
     background: #f1a5b1;
     transition: all 0.5s;
-    > .btn {
+
+    >.btn {
       height: 20px;
       display: flex;
       justify-content: center;
@@ -128,7 +129,7 @@ html {
 
   .trailer {
     height: 52px;
-    padding: 14px 32px 14px 32px;
+    padding: 14px 32px;
     border-radius: 4px 4px;
     background: transparent;
     cursor: pointer;
@@ -155,7 +156,7 @@ html {
     padding: 32px;
   }
 
-  .logo {
+  .logo img {
     height: 48px;
   }
 
@@ -178,4 +179,71 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1216px;
+    padding: 48px;
+    margin-bottom: 144px;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .social {
+    display: flex;
+    gap: 24px;
+
+    img {
+      width: 40px;
+    }
+
+  }
+
+  .main {
+    max-width: 1216px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .group-text {
+    h2 {
+      font-family: Open Sans;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 27.24px;
+      text-align: left;
+    }
+
+    h1 {
+      width: 420px;
+      height: 140px;
+      font-family: Andada Pro;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 70.4px;
+      text-align: left;
+    }
+
+    p {
+      width: 488px;
+      font-family: Archivo;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 36px;
+      text-align: left;
+    }
+  }
+
+  .left img {
+    width: 574px;
+  }
+
+  .group-btn {
+    display: flex;
+    flex-direction: row;
+  }
 }
